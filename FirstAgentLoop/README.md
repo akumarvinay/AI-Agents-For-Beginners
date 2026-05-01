@@ -55,7 +55,7 @@ python .\agent_loop.py
 
 ```powershell
 # Create a venv named .venv
-python -m venv .venv
+python -m venv venv
 
 # Activate the venv (PowerShell)
 . .\venv\Scripts\Activate.ps1
