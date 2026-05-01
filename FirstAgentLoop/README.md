@@ -51,6 +51,26 @@ $env:OPENAI_API_KEY = "your_api_key_here"
 python .\agent_loop.py
 ```
 
+3. (Optional but recommended) Create and activate a Python virtual environment, then install dependencies:
+
+```powershell
+# Create a venv named .venv
+python -m venv .venv
+
+# Activate the venv (PowerShell)
+. .\venv\Scripts\Activate.ps1
+
+# Upgrade pip and install the OpenAI package
+python -m pip install --upgrade pip
+python -m pip install openai
+```
+
+Alternatively, if you have a `requirements.txt` file in this folder, install with:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
 ## Notes
 
 - The loop's structure stays the same when you add tools; only the branch that handles tool calls changes.
